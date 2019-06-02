@@ -21,12 +21,7 @@ public class NextFitSolver {
     }
 	
 	private void addItem(int weight) {
-		Bin bin;
-		if (currentBin() < 0) {
-			bin = newBin();
-		} else {
-			bin = bins.get(currentBin());
-		}					
+		Bin bin = (currentBin() < 0)? newBin() : bins.get(currentBin());					
 		boolean added = bin.append(weight);
 		if (!added) {
 			bin = newBin();
