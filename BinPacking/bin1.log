@@ -135,3 +135,77 @@ Solution count 2: 1 133
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%
+
+Gurobi 8.1.1 (linux64, Java) logging started Sáb 01 Jun 2019 20:52:46 -03
+
+Academic license - for non-commercial use only
+Optimize a model with 40602 rows, 40602 columns and 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 133.0000000
+Presolve time: 0.43s
+Presolved: 40602 rows, 40602 columns, 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 1.000000e+00, 401 iterations, 0.12 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       1.0000000    1.00000  0.00%     -    0s
+
+Explored 0 nodes (401 simplex iterations) in 0.59 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 1 133 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%
+
+Gurobi 8.1.1 (linux64, Java) logging started Sáb 01 Jun 2019 21:41:08 -03
+
+Academic license - for non-commercial use only
+Optimize a model with 40602 rows, 40602 columns and 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 133.0000000
+Presolve time: 0.44s
+Presolved: 40602 rows, 40602 columns, 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 1.000000e+00, 401 iterations, 0.12 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       1.0000000    1.00000  0.00%     -    0s
+
+Explored 0 nodes (401 simplex iterations) in 0.61 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 1 133 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%
