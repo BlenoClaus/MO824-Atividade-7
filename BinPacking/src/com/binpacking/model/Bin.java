@@ -17,6 +17,17 @@ public class Bin {
 		return Boolean.FALSE;
 	}
 	
+	public boolean fit(Integer weight) {
+		if (index + weight < capacity) {			
+			return Boolean.TRUE;
+		} 
+		return Boolean.FALSE;
+	}
+	
+	public int residue(Integer weight) {
+		return capacity - (index+weight) ;
+	}
+	
 	public int getIndex() {
 		return index;
 	}

@@ -39,6 +39,6 @@ public class FirstFitSolver {
 	
 	public static void main(String[] args) {
 		BinPacking bin = InstanceReader.build("instances/instance0.bpp");
-		new FirstFitSolver().solver(bin, "next");
+		new FirstFitSolver().solver(bin, "first");
 	}
 }
