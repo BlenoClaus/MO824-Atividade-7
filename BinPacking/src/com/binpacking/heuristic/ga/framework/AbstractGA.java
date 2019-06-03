@@ -1,7 +1,6 @@
 package com.binpacking.heuristic.ga.framework;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 /**
@@ -17,7 +16,7 @@ import java.util.Random;
 public abstract class AbstractGA<G extends Number, F> {
 
 	@SuppressWarnings("serial")
-	public class Chromosome extends ArrayList<ArrayList<G>> {
+	public class Chromosome extends ArrayList<G> {
 	}
 
 	@SuppressWarnings("serial")
@@ -54,10 +53,6 @@ public abstract class AbstractGA<G extends Number, F> {
 	 * the size of the chromosome
 	 */
 	protected int chromosomeSize;
-	
-	protected int capacity;
-	
-	protected List<Integer> weightItems;
 
 	/**
 	 * the probability of performing a mutation
@@ -146,8 +141,6 @@ public abstract class AbstractGA<G extends Number, F> {
 		this.popSize = popSize;
 		this.chromosomeSize = this.ObjFunction.getDomainSize();
 		this.mutationRate = mutationRate;
-		this.capacity = this.ObjFunction.getCapacity();
-		this.weightItems = this.ObjFunction.getWeightItems();
 	}
 
 	/**

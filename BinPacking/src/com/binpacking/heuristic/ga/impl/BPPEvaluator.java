@@ -1,8 +1,5 @@
 package com.binpacking.heuristic.ga.impl;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.binpacking.heuristic.ga.framework.Evaluator;
 import com.binpacking.heuristic.ga.framework.Solution;
 import com.binpacking.model.BinPacking;
@@ -13,14 +10,6 @@ public class BPPEvaluator implements Evaluator<Integer>{
 	
 	public BPPEvaluator(BinPacking bin) {
 		this.binPacking = bin;
-	}
-	@Override
-	public Integer getCapacity() {
-		return binPacking.getBinCapacity();
-	}
-	@Override
-	public List<Integer> getWeightItems() {
-		return binPacking.getWeightOfItems();
 	}
 
 	@Override
