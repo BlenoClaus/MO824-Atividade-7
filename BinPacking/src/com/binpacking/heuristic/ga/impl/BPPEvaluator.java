@@ -19,18 +19,18 @@ public class BPPEvaluator implements Evaluator<Integer>{
 
 	@Override
 	public Double evaluate(Solution<Integer> sol) {
-		sol.cost = (double) sol.stream().mapToInt(e -> e).sum();
+		sol.cost = (double) sol.size();
 		return sol.cost ; 
 	}
 
 	@Override
 	public Double evaluateInsertionCost(Integer elem, Solution<Integer> sol) {
-		return (sol.get(elem) == 1)? 0.0 : 1.0;
+		return (sol.contains(elem))? 0.0 : 1.0;
 	}
 
 	@Override
 	public Double evaluateRemovalCost(Integer elem, Solution<Integer> sol) {
-		return sol.get(elem) == 1? -1.0 : 0.0;
+		return sol.contains(elem)? -1.0 : 0.0;
 	}
 
 	@Override

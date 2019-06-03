@@ -13,7 +13,7 @@ import java.util.Random;
  * @param <F>
  *            Generic type of the candidate to enter the solution (fenotype).
  */
-public abstract class AbstractGA<G extends Number, F> {
+public abstract class AbstractGA<G, F> {
 
 	@SuppressWarnings("serial")
 	public class Chromosome extends ArrayList<G> {
@@ -171,7 +171,7 @@ public abstract class AbstractGA<G extends Number, F> {
 			population = newpopulation;
 			bestChromosome = getBestChromosome(population);
 
-			if (fitness(bestChromosome) > bestSol.cost) {
+			if (fitness(bestChromosome) < bestSol.cost) {
 				bestSol = decode(bestChromosome);
 				if (verbose)
 					System.out.println("(Gen. " + g + ") BestSol = " + bestSol);
