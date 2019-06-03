@@ -1,5 +1,7 @@
 package com.binpacking.heuristic.ga.framework;
 
+import java.util.List;
+
 /**
  * The Evaluator interface gives to a problem the required functionality to
  * obtain a mapping of a solution (n-dimensional array of elements of generic
@@ -29,6 +31,9 @@ public interface Evaluator<E> {
 	 */
 	public abstract Double evaluate(Solution<E> sol);
 
+	public Integer getCapacity();
+	
+	public List<Integer> getWeightItems();
 	/**
 	 * Evaluates the cost variation of inserting an element into a solution
 	 * according to an objective function.
