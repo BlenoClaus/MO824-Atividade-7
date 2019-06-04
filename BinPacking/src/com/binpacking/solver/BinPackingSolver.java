@@ -21,7 +21,7 @@ public class BinPackingSolver {
     public void solver(BinPacking binPacking, String logName) throws GRBException {
     	env = new GRBEnv(logName+".log");
         model = new GRBModel(env);
-        model.getEnv().set(GRB.DoubleParam.TimeLimit, 1000000.0);
+        model.getEnv().set(GRB.DoubleParam.TimeLimit, 10*60);
         buildModel(binPacking);
         model.write(logName+".lp");
         model.optimize();
@@ -38,22 +38,23 @@ public class BinPackingSolver {
 				x[i][j] = model.addVar(0, 1, 0.0f, GRB.BINARY, "x[" + i + "]["+j+"]");
 			}
 		}
+		model.update();
 		
 		GRBLinExpr obj = new GRBLinExpr();
 		for (int i = 0; i < binPacking.getNumberOfItems(); i++) {
 			obj.addTerm(1.0, y[i]);
 		}
-		model.setObjective(obj, GRB.MINIMIZE);
-		model.update();
+		model.setObjective(obj);
+		model.set(GRB.IntAttr.ModelSense, GRB.MINIMIZE);
 		
 		for (int i = 0 ; i < binPacking.getNumberOfItems(); i++) {
+			GRBLinExpr expr = new GRBLinExpr();
 			for (int j = 0; j < binPacking.getNumberOfItems(); j++) {
-				GRBLinExpr expr = new GRBLinExpr();
 		    	expr.addTerm(binPacking.getWeightOfItems().get(j), x[i][j]);
-		    	GRBLinExpr exprResult = new GRBLinExpr();
-		    	exprResult.addTerm(binPacking.getBinCapacity(), y[i]);
-		    	model.addConstr(expr, GRB.LESS_EQUAL, exprResult, i+" "+j);
 			}
+			GRBLinExpr exprResult = new GRBLinExpr();
+			exprResult.addTerm(binPacking.getBinCapacity(), y[i]);
+			model.addConstr(expr, GRB.LESS_EQUAL, exprResult, "");
 		}
 		
 		for (int j = 0; j < binPacking.getNumberOfItems(); j++) {
@@ -64,7 +65,11 @@ public class BinPackingSolver {
 			model.addConstr(expr, GRB.EQUAL, 1, "");
 		}
 		
-		model.set(GRB.IntAttr.ModelSense, GRB.MINIMIZE);
+		for (int i = 0 ; i < binPacking.getNumberOfItems()-1; i++) {
+			model.addConstr(y[i+1], GRB.LESS_EQUAL, y[i], "");
+		}
+		
+		//model.set(GRB.IntAttr.ModelSense, GRB.MINIMIZE);
 		model.update();
 		
 	}
