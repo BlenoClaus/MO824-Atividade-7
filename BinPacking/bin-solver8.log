@@ -1,0 +1,85 @@
+
+Gurobi 8.1.1 (linux64, Java) logging started Tue Jun  4 11:15:12 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 3005 rows, 1005006 columns and 2011012 nonzeros
+Variable types: 0 continuous, 1005006 integer (1005006 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 0 rows and 0 columns (presolve time = 5s) ...
+Presolve time: 6.60s
+Presolved: 3005 rows, 1005006 columns, 2011012 nonzeros
+Variable types: 0 continuous, 1005006 integer (1005006 binary)
+Found heuristic solution: objective 1002.0000000
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.633140e+05   0.000000e+00     11s
+    5896    3.3203718e+02   5.794885e+05   0.000000e+00     15s
+    7147    3.3204821e+02   4.663449e+05   0.000000e+00     20s
+    8011    3.3225484e+02   6.053213e+05   0.000000e+00     26s
+    8288    3.3225610e+02   2.504465e+05   0.000000e+00     31s
+    8740    3.3225795e+02   4.129365e+05   0.000000e+00     37s
+    8940    3.3225882e+02   1.595937e+05   0.000000e+00     42s
+    9140    3.3225989e+02   8.686259e+05   0.000000e+00     45s
+    9467    3.3226142e+02   7.161605e+05   0.000000e+00     51s
+    9677    3.3226232e+02   2.170822e+05   0.000000e+00     55s
+   10024    3.3226350e+02   1.872289e+05   0.000000e+00     62s
+   10181    3.3226691e+02   1.861954e+05   0.000000e+00     65s
+   10532    3.3226795e+02   1.018082e+05   0.000000e+00     72s
+   10839    3.3226929e+02   1.021129e+05   0.000000e+00     77s
+   11026    3.3227002e+02   6.733211e+04   0.000000e+00     81s
+   11400    3.3227113e+02   5.940319e+04   0.000000e+00     87s
+   11597    3.3227159e+02   8.152420e+05   0.000000e+00     90s
+   11924    3.3227252e+02   1.474496e+05   0.000000e+00     96s
+   12211    3.3227326e+02   4.304291e+04   0.000000e+00    100s
+   12518    3.3227388e+02   5.548699e+05   0.000000e+00    105s
+   12835    3.3227460e+02   2.105789e+05   0.000000e+00    111s
+   13082    3.3227513e+02   1.888558e+05   0.000000e+00    115s
+   13382    3.3227573e+02   1.553238e+05   0.000000e+00    121s
+   13672    3.3227623e+02   4.532539e+05   0.000000e+00    126s
+   13919    3.3227681e+02   5.094939e+05   0.000000e+00    130s
+   14276    3.3227745e+02   1.210566e+05   0.000000e+00    136s
+   14654    3.3227858e+02   1.861690e+05   0.000000e+00    141s
+   14908    3.3227909e+02   1.920133e+05   0.000000e+00    145s
+   15168    3.3227952e+02   9.535709e+04   0.000000e+00    150s
+   15522    3.3228014e+02   2.159507e+04   0.000000e+00    156s
+   15862    3.3228140e+02   4.858011e+04   0.000000e+00    162s
+   16072    3.3228197e+02   7.492865e+04   0.000000e+00    165s
+   16399    3.3228234e+02   1.588761e+05   0.000000e+00    171s
+   16686    3.3228439e+02   6.344166e+04   0.000000e+00    176s
+   17050    3.3228637e+02   1.544376e+01   0.000000e+00    181s
+   17064    3.3200000e+02   0.000000e+00   0.000000e+00    182s
+
+Root relaxation: objective 3.320000e+02, 17064 iterations, 172.07 seconds
+Total elapsed time = 356.55s
+Total elapsed time = 367.25s
+Total elapsed time = 412.78s
+Total elapsed time = 435.92s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  332.00000    0  793 1002.00000  332.00000  66.9%     -  495s
+H    0     0                     387.0000000  332.00000  14.2%     -  515s
+H    0     0                     341.0000000  332.00000  2.64%     -  553s
+     0     0  332.00000    0  563  341.00000  332.00000  2.64%     -  590s
+H    0     0                     340.0000000  332.00000  2.35%     -  600s
+
+Cutting planes:
+  Cover: 106
+  Clique: 4
+  MIR: 58
+  StrongCG: 14
+
+Explored 1 nodes (243896 simplex iterations) in 600.12 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 340 341 387 1002 
+
+Time limit reached
+Best objective 3.400000000000e+02, best bound 3.320000000000e+02, gap 2.3529%

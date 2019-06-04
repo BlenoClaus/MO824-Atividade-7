@@ -12,8 +12,8 @@ import gurobi.GRBVar;
 
 public class BinPackingSolver {
 	
-	public GRBEnv env;
-    public GRBModel model;
+	public static GRBEnv env;
+    public static GRBModel model;
     public GRBVar[] y;
     public GRBVar[][] x;
     
@@ -75,9 +75,27 @@ public class BinPackingSolver {
 	}
 
 	public static void main(String[] args) {
-		BinPacking bin0 = InstanceReader.build("instances/instance6.bpp");
+		BinPacking bin0 = InstanceReader.build("instances/instance0.bpp");
+		BinPacking bin1 = InstanceReader.build("instances/instance1.bpp");
+		BinPacking bin2 = InstanceReader.build("instances/instance2.bpp");
+		BinPacking bin3 = InstanceReader.build("instances/instance3.bpp");
+		BinPacking bin4 = InstanceReader.build("instances/instance4.bpp");
+		BinPacking bin5 = InstanceReader.build("instances/instance5.bpp");
+		BinPacking bin6 = InstanceReader.build("instances/instance6.bpp");
+		BinPacking bin7 = InstanceReader.build("instances/instance7.bpp");
+		BinPacking bin8 = InstanceReader.build("instances/instance8.bpp");
+		BinPacking bin9 = InstanceReader.build("instances/instance9.bpp");
 		try {
-			new BinPackingSolver().solver(bin0, "bin1");
+			new BinPackingSolver().solver(bin0, "bin-solver0");
+			new BinPackingSolver().solver(bin1, "bin-solver1");
+			new BinPackingSolver().solver(bin2, "bin-solver2");
+			new BinPackingSolver().solver(bin3, "bin-solver3");
+			new BinPackingSolver().solver(bin4, "bin-solver4");
+			new BinPackingSolver().solver(bin5, "bin-solver5");
+			new BinPackingSolver().solver(bin6, "bin-solver6");
+			new BinPackingSolver().solver(bin7, "bin-solver7");
+			new BinPackingSolver().solver(bin8, "bin-solver8");
+			new BinPackingSolver().solver(bin9, "bin-solver9");
 		} catch (GRBException e) {
 			e.printStackTrace();
 		}
