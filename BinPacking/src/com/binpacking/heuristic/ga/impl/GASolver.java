@@ -1,12 +1,15 @@
 package com.binpacking.heuristic.ga.impl;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 import com.binpacking.heuristic.ga.framework.AbstractGA;
 import com.binpacking.heuristic.ga.framework.Solution;
+import com.binpacking.heuristic.next.NextFitSolver;
 import com.binpacking.io.BPPUtils;
 import com.binpacking.io.InstanceReader;
 import com.binpacking.model.BinPacking;
@@ -19,6 +22,24 @@ public class GASolver extends AbstractGA<Integer, Integer> {
 	public GASolver(BinPacking bin, Integer generations, Integer popSize, Double mutationRate) {
 		super(new BPPEvaluator(bin), generations, popSize, mutationRate);
 		this.binPacking = bin;
+	}
+	
+	@Override
+	protected Population initializePopulation() {
+
+		Population population = new Population();
+
+		while (population.size() < popSize) {
+			population.add(generateRandomChromosome());
+		}
+		
+		NextFitSolver nextFitSolver = new NextFitSolver();
+		nextFitSolver.solver(binPacking, "GA");
+		AbstractGA<Integer, Integer>.Chromosome chromosome = new Chromosome();
+		nextFitSolver.getItems().stream().forEach(item -> chromosome.add(item));
+		population.add(chromosome);
+		return population;
+
 	}
 
 	@Override
@@ -53,7 +74,6 @@ public class GASolver extends AbstractGA<Integer, Integer> {
 
 			offsprings.add(offspring1);
 			offsprings.add(offspring2);
-
 		}
 
 		return offsprings;
@@ -79,19 +99,34 @@ public class GASolver extends AbstractGA<Integer, Integer> {
 		ObjFunction.evaluate(sol);
 		return sol;
 	}
-	
-	private boolean isValid(AbstractGA<Integer, Integer>.Chromosome chromosome) {
-		if (chromosome == null) return false;
-		List<Integer> binsCapacity = computeCapacity(chromosome);
-		for (int i = 0; i < chromosome.size(); i++) {
-			int binIndex = chromosome.get(i);
-			if (binsCapacity.get(binIndex) > binPacking.getBinCapacity()) {
-				return false;
+
+	@Override
+	protected Population selectPopulation(Population offsprings) {
+		ArrayList<AbstractGA<Integer, Integer>.Chromosome> pop = new ArrayList<>(offsprings);
+		Collections.sort(pop, new Comparator<Chromosome>() {
+			@Override
+			public int compare(AbstractGA<Integer, Integer>.Chromosome o1, AbstractGA<Integer, Integer>.Chromosome o2) {
+				Double f1 = fitness(o1);
+				Double f2 = fitness(o2);
+				if (f1 > f2) return -1;
+				if (f1 < f2) return 1;
+				return 0;
 			}
+		});
+		
+		int size = (int) ((int) pop.size() * 0.05);
+		
+		List<AbstractGA<Integer, Integer>.Chromosome> subListWorst = pop.subList(0, size);
+		List<AbstractGA<Integer, Integer>.Chromosome> subListBest = pop.subList(pop.size()-size, pop.size());
+		Double f1 = fitness(subListWorst.get(0));
+		Double f2 = fitness(subListBest.get(subListBest.size()-1));
+		if (f1 > f2) {
+			offsprings.removeAll(subListBest);
+			offsprings.addAll(subListBest);
 		}
-		return true;
+		
+		return offsprings;
 	}
-	
 	
 	private List<Integer> computeCapacity(AbstractGA<Integer, Integer>.Chromosome chromosome) {
 		List<Integer> binsCapacity = new ArrayList<>();
@@ -156,8 +191,8 @@ public class GASolver extends AbstractGA<Integer, Integer> {
 
 	public static void main(String[] args) {
 		long startTime = System.currentTimeMillis();
-		BinPacking bin = InstanceReader.build("instances/instance0.bpp");
-		GASolver gaSolver = new GASolver(bin, 100000, 100, 1.0 / 100.0);
+		BinPacking bin = InstanceReader.build("instances/instance1.bpp");
+		GASolver gaSolver = new GASolver(bin, 1000000, 100, 1.0 / 100.0);
 		Solution<Integer> bestSol = gaSolver.solve();
 		System.out.println("maxVal = " + bestSol);
 		long endTime = System.currentTimeMillis();

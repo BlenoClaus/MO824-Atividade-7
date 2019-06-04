@@ -209,3 +209,475 @@ Solution count 2: 1 133
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%
+
+Gurobi 8.1.1 (linux64, Java) logging started Seg 03 Jun 2019 20:16:11 -03
+
+Academic license - for non-commercial use only
+Optimize a model with 40602 rows, 40602 columns and 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 133.0000000
+Presolve time: 0.43s
+Presolved: 40602 rows, 40602 columns, 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.01s
+
+Solved with primal simplex
+
+Root relaxation: objective 1.000000e+00, 401 iterations, 0.14 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       1.0000000    1.00000  0.00%     -    0s
+
+Explored 0 nodes (401 simplex iterations) in 0.64 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 1 133 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%
+
+Gurobi 8.1.1 (linux64, Java) logging started Seg 03 Jun 2019 20:16:37 -03
+
+Academic license - for non-commercial use only
+Optimize a model with 40602 rows, 40602 columns and 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 133.0000000
+Presolve time: 0.42s
+Presolved: 40602 rows, 40602 columns, 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 1.000000e+00, 401 iterations, 0.12 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       1.0000000    1.00000  0.00%     -    0s
+
+Explored 0 nodes (401 simplex iterations) in 0.58 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 1 133 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%
+
+Gurobi 8.1.1 (linux64, Java) logging started Seg 03 Jun 2019 20:33:17 -03
+
+Academic license - for non-commercial use only
+Optimize a model with 40602 rows, 40602 columns and 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 133.0000000
+Presolve time: 0.48s
+Presolved: 40602 rows, 40602 columns, 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.01s
+
+Solved with primal simplex
+
+Root relaxation: objective 1.000000e+00, 401 iterations, 0.13 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       1.0000000    1.00000  0.00%     -    0s
+
+Explored 0 nodes (401 simplex iterations) in 0.67 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 1 133 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%
+
+Gurobi 8.1.1 (linux64, Java) logging started Seg 03 Jun 2019 20:34:27 -03
+
+Academic license - for non-commercial use only
+Optimize a model with 40602 rows, 40602 columns and 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 133.0000000
+Presolve time: 0.42s
+Presolved: 40602 rows, 40602 columns, 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 1.000000e+00, 401 iterations, 0.12 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       1.0000000    1.00000  0.00%     -    0s
+
+Explored 0 nodes (401 simplex iterations) in 0.58 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 1 133 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%
+
+Gurobi 8.1.1 (linux64, Java) logging started Seg 03 Jun 2019 20:49:55 -03
+
+Academic license - for non-commercial use only
+Warning: constraint name "0 0" has a space
+Optimize a model with 40602 rows, 40602 columns and 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 133.0000000
+Presolve time: 0.42s
+Presolved: 40602 rows, 40602 columns, 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 1.000000e+00, 401 iterations, 0.14 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       1.0000000    1.00000  0.00%     -    0s
+
+Explored 0 nodes (401 simplex iterations) in 0.61 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 1 133 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%
+
+Gurobi 8.1.1 (linux64, Java) logging started Seg 03 Jun 2019 20:51:09 -03
+
+Academic license - for non-commercial use only
+Warning: constraint name "0 0" has a space
+Optimize a model with 40602 rows, 40602 columns and 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 133.0000000
+Presolve time: 0.42s
+Presolved: 40602 rows, 40602 columns, 121203 nonzeros
+Variable types: 0 continuous, 40602 integer (40602 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 1.000000e+00, 401 iterations, 0.12 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       1.0000000    1.00000  0.00%     -    0s
+
+Explored 0 nodes (401 simplex iterations) in 0.58 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 1 133 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%
+
+Gurobi 8.1.1 (linux64, Java) logging started Seg 03 Jun 2019 20:51:21 -03
+
+Academic license - for non-commercial use only
+Warning: constraint name "0 0" has a space
+Optimize a model with 360600 rows, 360600 columns and 1080000 nonzeros
+Variable types: 0 continuous, 360600 integer (360600 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 380.0000000
+Presolve time: 4.53s
+Presolved: 360600 rows, 360600 columns, 1080000 nonzeros
+Variable types: 0 continuous, 360600 integer (360600 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    6.0000000e+02   0.000000e+00   6.000000e+02      6s
+    1199    1.0000000e+00   0.000000e+00   0.000000e+00      6s
+Concurrent spin time: 0.00s
+
+Solved with primal simplex
+
+Root relaxation: objective 1.000000e+00, 1199 iterations, 1.18 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       1.0000000    1.00000  0.00%     -    6s
+
+Explored 0 nodes (1199 simplex iterations) in 6.18 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 1 380 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%
+
+Gurobi 8.1.1 (linux64, Java) logging started Seg 03 Jun 2019 20:52:02 -03
+
+Academic license - for non-commercial use only
+Warning: constraint name "0 0" has a space
+Optimize a model with 642402 rows, 642402 columns and 1924803 nonzeros
+Variable types: 0 continuous, 642402 integer (642402 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 506.0000000
+Presolve removed 0 rows and 0 columns (presolve time = 8s) ...
+Presolve time: 8.53s
+Presolved: 642402 rows, 642402 columns, 1924803 nonzeros
+Variable types: 0 continuous, 642402 integer (642402 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    8.0100000e+02   0.000000e+00   8.010000e+02     11s
+    1601    1.0000000e+00   0.000000e+00   0.000000e+00     11s
+Concurrent spin time: 0.05s
+
+Solved with primal simplex
+
+Root relaxation: objective 1.000000e+00, 1601 iterations, 2.16 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       1.0000000    1.00000  0.00%     -   11s
+
+Explored 0 nodes (1601 simplex iterations) in 11.52 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 1 506 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%
+
+Gurobi 8.1.1 (linux64, Java) logging started Seg 03 Jun 2019 20:55:13 -03
+
+Academic license - for non-commercial use only
+Warning: constraint name "0 0" has a space
+Optimize a model with 642402 rows, 642402 columns and 1924803 nonzeros
+Variable types: 0 continuous, 642402 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 506.0000000
+Presolve removed 0 rows and 0 columns (presolve time = 5s) ...
+Presolve time: 8.85s
+Presolved: 642402 rows, 642402 columns, 1924803 nonzeros
+Variable types: 0 continuous, 642402 integer (642402 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    8.0100000e+02   0.000000e+00   8.010000e+02     11s
+    1601    1.0000000e+00   0.000000e+00   0.000000e+00     12s
+Concurrent spin time: 0.03s
+
+Solved with primal simplex
+
+Root relaxation: objective 1.000000e+00, 1601 iterations, 2.14 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       1.0000000    1.00000  0.00%     -   11s
+
+Explored 0 nodes (1601 simplex iterations) in 11.83 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 1 506 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%
+
+Gurobi 8.1.1 (linux64, Java) logging started Seg 03 Jun 2019 20:55:49 -03
+
+Academic license - for non-commercial use only
+Warning: constraint name "0 0" has a space
+Optimize a model with 642402 rows, 642402 columns and 1924803 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+
+Concurrent LP optimizer: dual simplex and barrier
+Showing barrier log only...
+
+Presolve time: 1.84s
+Presolved: 642402 rows, 642402 columns, 1924803 nonzeros
+
+Ordering time: 0.00s
+
+Barrier statistics:
+ Dense cols : 1
+ AA' NZ     : 1.424e+03
+ Factor NZ  : 3.561e+03 (roughly 1 MByte of memory)
+ Factor Ops : 9.257e+03 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   2.22026811e+00 -4.50304745e+01  1.62e-01 0.00e+00  6.98e-02     3s
+   1   2.13588169e+00 -5.00067764e+00  8.33e-17 0.00e+00  3.34e-03     3s
+   2   8.99754537e-01  6.52307039e-01  1.11e-16 6.38e-17  1.16e-04     3s
+   3   1.16658778e+00  8.91907584e-01  1.58e-11 8.35e-15  1.28e-04     3s
+   4   8.99487043e-01  8.95540251e-01  2.46e-11 2.36e-15  1.85e-06     3s
+   5   8.99498557e-01  8.99476988e-01  3.98e-09 3.89e-17  1.01e-08     3s
+   6   8.99481293e-01  8.99481267e-01  1.82e-10 4.48e-15  1.20e-11     3s
+   7   8.99481275e-01  8.99481275e-01  2.63e-09 1.85e-14  1.66e-15     3s
+
+Barrier solved model in 7 iterations and 3.05 seconds
+Optimal objective 8.99481275e-01
+
+Crossover log...
+
+  641191 PPushes remaining with PInf 0.0000000e+00                 5s
+  628957 PPushes remaining with PInf 0.0000000e+00                 5s
+  418612 PPushes remaining with PInf 0.0000000e+00                10s
+  339732 PPushes remaining with PInf 0.0000000e+00                15s
+  288200 PPushes remaining with PInf 0.0000000e+00                20s
+  248193 PPushes remaining with PInf 0.0000000e+00                25s
+  220293 PPushes remaining with PInf 0.0000000e+00                30s
+  170565 PPushes remaining with PInf 0.0000000e+00                38s
+  152038 PPushes remaining with PInf 0.0000000e+00                40s
+  113328 PPushes remaining with PInf 0.0000000e+00                47s
+   83177 PPushes remaining with PInf 0.0000000e+00                54s
+   68330 PPushes remaining with PInf 0.0000000e+00                57s
+   41637 PPushes remaining with PInf 0.0000000e+00                62s
+   16717 PPushes remaining with PInf 0.0000000e+00                66s
+     713 PPushes remaining with PInf 0.0000000e+00                71s
+     302 PPushes remaining with PInf 0.0000000e+00                79s
+       0 PPushes remaining with PInf 0.0000000e+00                94s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 7.4755827e-13     94s
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+  641194    8.9948128e-01   0.000000e+00   0.000000e+00    107s
+
+Solved with barrier
+Solved in 641194 iterations and 106.89 seconds
+Optimal objective  8.994812753e-01
+
+Gurobi 8.1.1 (linux64, Java) logging started Seg 03 Jun 2019 21:03:05 -03
+
+Academic license - for non-commercial use only
+Warning: constraint name "0 0" has a space
+Optimize a model with 642402 rows, 642402 columns and 1924803 nonzeros
+Variable types: 0 continuous, 642402 integer (642402 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 506.0000000
+Presolve removed 0 rows and 0 columns (presolve time = 8s) ...
+Presolve time: 8.71s
+Presolved: 642402 rows, 642402 columns, 1924803 nonzeros
+Variable types: 0 continuous, 642402 integer (642402 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    8.0100000e+02   0.000000e+00   8.010000e+02     11s
+    1601    1.0000000e+00   0.000000e+00   0.000000e+00     11s
+Concurrent spin time: 0.03s
+
+Solved with primal simplex
+
+Root relaxation: objective 1.000000e+00, 1601 iterations, 2.15 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       1.0000000    1.00000  0.00%     -   11s
+
+Explored 0 nodes (1601 simplex iterations) in 11.70 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 1 506 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+00, best bound 1.000000000000e+00, gap 0.0000%

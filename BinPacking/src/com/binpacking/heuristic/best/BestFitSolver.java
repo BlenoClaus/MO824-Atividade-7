@@ -49,7 +49,7 @@ public class BestFitSolver {
 	}
 	
 	public static void main(String[] args) {
-		BinPacking bin = InstanceReader.build("instances/instance0.bpp");
+		BinPacking bin = InstanceReader.build("instances/instance6.bpp");
 		new BestFitSolver().solver(bin, "best");
 	}
 	
